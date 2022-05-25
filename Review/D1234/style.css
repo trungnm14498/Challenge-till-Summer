@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --yellow-color: #ffd414f8;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background:  linear-gradient(to right, #efcc00, #97c222);
+    color: white;
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    width: 1600px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 200px auto;
+}
+
+.card{
+    width: 22%;
+    height: 450px;
+    background: #272d40;
+    position: relative;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.card__icons{
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__icons i{
+    cursor: pointer;
+    z-index: 2;
+}
+
+.card__img{
+    width: 85%;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+}
+
+.card__img img{
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 0 -50px 25px;
+    
+}
+
+.card__title, .card__price{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    color: wheat;
+    transition: 0.5s;
+}
+
+.card__price{
+    font-size: 30px;
+    color: white;
+}
+
+.card:hover .card__view{
+    margin: 0 105px 10px; 
+}
+
+.card__view button{
+    padding: 10px 20px;
+}
+
+.card__contact{
+    margin: 15px 0px 10px 10px;
+    display: flex;
+    font-size: 20px;
+}
+
+.card__contact i{
+    color:  white;
+    margin: 0 15px;
+}
+
+.card__contact i:hover{
+    color: var(--yellow-color);
+}
+
+.card button{
+    border: solid 1px var(--yellow-color);
+    outline: none;
+    background: transparent;
+    color:wheat;
+    border-radius: 3px;
+    font-weight:550;
+    cursor: pointer;
+}
+
+button:hover{
+    background: var(--yellow-color);
+    color: black;
+}
+
+.card__button{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+
+.card__button button{
+    width: 120px;
+    height: 35px;
+}
+
+.card:hover .card__img{
+    transform: translateY(-120px) rotate(-20deg)
+}
+
+.card:hover .card__title{
+    transform: translate(-1vh,-25%);
+}
+
+.card:hover .card__price{
+    transform: translate(-119px,-10px);
+}
+
+.card__view, .card__contact, .card__button{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.card__view{
+    margin-top: 150px;
+}
+
+.card:hover .card__view,
+.card:hover .card__contact,
+.card:hover .card__button{
+    visibility: visible;
+    opacity: 100;
+    transition-delay: 0.2s;
+}
+
+.overlay{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.5s;
+}
+
+.showOverlay{
+    height: 100vh;
+    width: 100%;
+}
+
+.info__inner{
+    position: fixed;
+    top: 17%;
+    left: 35%;
+    width: fit-content;
+    /* width: 700px;
+    height: 550px; */
+    background: #dadada;
+    color:black;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: showInfoBox 0.35s linear;
+}
+
+.info__header{
+    display: flex;
+    justify-content: space-between;
+    background: var(--yellow-color);
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.info__header i{
+    cursor: pointer;
+}
+
+.info__body{
+    display: grid;
+    grid-template-columns: 120px 500px;
+    grid-template-rows: 40px 40px 40px 40px 40px 240px;
+    align-items: baseline;
+    padding: 10px;
+}
+
+.info__body p{
+    font-size: 20px;
+}
+
+.info__footer{
+    text-align: right;
+    margin-top: -20px;
+    padding: 10px;
+}
+
+.info__footer button{
+    padding: 10px 20px;
+    color: black;
+    background: var(--yellow-color);
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes showInfoBox {
+    from{
+        top: -200px;
+        opacity: 0;
+    }
+
+    to{
+        top: 17%;
+        left: 35%;
+        opacity: 1;
+    }
+}
+
+.control{
+    font-size: 35px;
+    color:white;
+    position: absolute;
+    cursor: pointer;
+}
+
+.control.close{
+    right: 25px;
+    top: 20px;
+}
+
+.control.prev{
+    left: 20px;
+    top: 400px;
+}
+
+.control.next{
+    right: 20px;
+    top: 400px;
+}
+
+.gallery{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.gallery__img{
+    position: absolute;
+    height: 650px;
+    width: 900px;
+    margin: 100px 500px;
+    border: solid white 2px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery__img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.35s;
+}
+
+.show{
+    opacity: 1;
+    pointer-events: auto;
+}
