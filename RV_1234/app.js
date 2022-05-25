@@ -19,18 +19,6 @@ console.log(imgName)
 currentIndexCard = 0
 currentIndexImg = 0
 
-// function showInfo(i){ 
-//     overlay.style.backgroundImage='url(./img/bg.jpg)'
-//     overlay.style.filter='grayScale(0.7)'
-//     cards.forEach((item)=>{
-//         item.style.display='none'
-//     })
-//     item = infoBoxs[i];
-//     item.classList.toggle('hide');
-//     item.addEventListener('click', ()=>{
-//         console.log("You clicked " + i);
-//     });
-// }
 
 function createFunctionOpenWithIndex(index) {
     func = () => {
