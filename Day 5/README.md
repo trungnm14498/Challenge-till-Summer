@@ -6,10 +6,11 @@ lần sau sẽ cẩn thận hơn :triumph:.
 gì mới trong ngày hôm đấy. Sau đó khi làm bài review vẫn sẽ ghi lại tổng hợp kiến thức qua các ngày 
 trước đó :muscle:
 <br>
-Một vài "cái mới" của ngày thứ 5: <br>
+<b>Một vài "cái mới" của ngày thứ 5: <b><br>
 1. Tạo search box với input. <br>
 2. Một vài trick với position. <br>
 3. transition: ease - hiệu ứng mượt hơn, nhanh dần. <br>
-<h3>JS:</h3>4. focus(): đại loại là tập trung gọi vào một element, active ngay element đó khi được gọi. <br>
-5. parentElement và next/previousElementSibling: lấy element trước hoặc sau đối tượng hiện tại. <br>
-6. Khi dùng this thì không được dùng arrow function.
+<h3>JS:</h3>
+&emsp;4. focus(): đại loại là tập trung gọi vào một element, active ngay element đó khi được gọi. <br>
+&emsp;5. parentElement và next/previousElementSibling: lấy element trước hoặc sau đối tượng hiện tại. <br>
+&emsp;6. Khi dùng this thì không được dùng arrow function.
