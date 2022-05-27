@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Macondo&family=Oxygen:wght@300;400;700&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: rgb(181, 195, 58);
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert{
+    color: rgb(245, 248, 189);
+    background: black;
+    border-radius: 12px;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.box .result{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid black 7px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 300px;
+    height: 100px;
+    background: #000;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card p{
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color:  white;
+}
+
+.card p:first-child{
+    color: black;
+    height: 50%;
+    background: rgb(245, 248, 189);      
+}
+
+.detail{
+    display: flex;
+}
+.hide{
+    display: none;
+}

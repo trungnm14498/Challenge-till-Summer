@@ -36,3 +36,8 @@
 - Dự án lớn, số lượng code nhiều
 
 ## Thực hành
+- Làm button:
+    + Enabled: Pointer, hover effect
+    + Disable: Arrow, no effect
+
+- Làm toast (kiểu dạng modal): khá hay ho với nhiều JS và một số mẹo ghi rõ trong file README

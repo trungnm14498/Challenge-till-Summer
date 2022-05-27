@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Macondo&family=Oxygen:wght@300;400;700&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+body > div{
+    margin: auto;
+}
+
+/* Block */
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:#fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    min-width: 120px;
+}
+
+.btn:hover{
+    opacity: 0.85;
+}
+
+.btn + .btn{
+    margin-left: 16px;
+}
+
+.btn--size-l{
+    padding: 20px 58px;
+}
+
+.btn--size-s{
+    padding: 8px 32px;
+}
+
+.btn--success{
+    background-color: #71be34;
+}
+
+.btn--warn{
+    background-color: #ffb702;
+}
+
+.btn--danger{
+    background-color: #ff623d;
+}
+
+.btn--disabled {
+    opacity: 0.5 !important;
+    cursor: default;
+}
