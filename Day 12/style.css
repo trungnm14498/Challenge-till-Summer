@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0,0,0,0.2);
+}
+
+.range{
+    width: 600px;
+    margin-top: 50px;
+    border: 1px solid #aaa;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    cursor: ew-resize;
+}
+
+.process{
+    background: linear-gradient(60deg,yellowgreen,orange);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
