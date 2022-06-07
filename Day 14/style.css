@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Macondo&family=Oxygen:wght@300;400;700&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body{
+    height: 100vh;
+    background: #dadada;
+}
+
+.container{
+    width: 1000px;
+    height: 900px;
+    margin: 50px auto;
+}
+
+.main{
+    height: 80%;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-feature{
+    transition: 1s;
+
+    /* animation: slideLeft 0.5s ease-in-out; */
+}
+
+.list-image{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-image div{
+    padding: 5px;
+    cursor: pointer;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.control {
+    top: 50%;
+    position: absolute;
+    font-size: 50px;
+    color: black;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.control:hover{
+    color: aliceblue;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.active {
+    background: rgb(227, 97, 97);
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(0)
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(0)
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+}
