@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Macondo&family=Oxygen:wght@300;400;700&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body{
+    height: 100vh;
+    background: #dadada;
+}
+
+h1 {
+    margin: 30px;
+    font-weight: 600;
+}
+
+.container{
+    width: 500px;
+    height: 600px;
+    background: white;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 10px 20px;
+    overflow-y: scroll;
+}
+
+
+.search{
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.search input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.search i {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.product{
+    display: flex;
+    height: 120px;
+    padding: 10px 20px;
+}
+
+.product img{
+    width: 100px;
+    object-fit: cover;
+    /* border: 1px solid black; */
+}
+
+.product .info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+.product .name{
+    font-weight: bold ;
+}
+
+.product:hover{
+    cursor: pointer;
+    background: #dadada;
+}
+
+.hide {
+    display: none;
+}
